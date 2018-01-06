@@ -18,6 +18,10 @@ module.exports = {
         'css-loader',
         'sass-loader'
       ],
+    },{
+      test: /\.glsl$/,
+      include: path.join(__dirname, 'src/glsl'),
+      loader: 'webpack-glsl-loader'
     }]
   },
   devtool: 'cheap-module-eval-source-map',

@@ -10,6 +10,8 @@ import './styles/style.scss';
 
 // ReactDOM.render( <p>AppName component goes here</p>, document.getElementById('app') );
 
+import fragmentShader from './glsl/fragment.glsl';
+
 
 const container = document.getElementById('container');
 const camera = new THREE.Camera();
@@ -32,7 +34,7 @@ function init(){
     const material = new THREE.ShaderMaterial({
       uniforms: uniforms,
       vertexShader: document.getElementById( 'vertexShader' ).textContent,
-      fragmentShader: document.getElementById( 'fragmentShader' ).textContent
+      fragmentShader: fragmentShader
     });
 
     const mesh = new THREE.Mesh(geometry, material);
