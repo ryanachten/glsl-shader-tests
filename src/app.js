@@ -10,7 +10,7 @@ import './styles/style.scss';
 
 // ReactDOM.render( <p>AppName component goes here</p>, document.getElementById('app') );
 
-import fragmentShader from './glsl/fragment.glsl';
+import fragmentShader from './glsl/01_initTest.glsl';
 
 
 const container = document.getElementById('container');
