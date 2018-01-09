@@ -11,7 +11,8 @@ import './styles/style.scss';
 // ReactDOM.render( <p>AppName component goes here</p>, document.getElementById('app') );
 
 // import fragmentShader from './glsl/01_initTest.glsl';
-import fragmentShader from './glsl/02_algorithmicDrawing.glsl';
+// import fragmentShader from './glsl/02_algorithmicDrawing.glsl';
+import fragmentShader from './glsl/03_colors.glsl';
 
 
 const container = document.getElementById('container');
